@@ -1,0 +1,7 @@
+/**:
+  ros__parameters:
+    voice_config:
+      additional_half_tone: 1.0
+      all_pass_constant: 0.55
+      speech_speed_rate: 1.0
+      voice_model: "mei_normal.htsvoice"
