@@ -163,7 +163,6 @@ void RaspicatSpeak2::speak(const std::string speak_str) {
       std::to_string(voc_.speech_speed_rate) + " -fm " +
       std::to_string(voc_.additional_half_tone) + " -a " +
       std::to_string(voc_.all_pass_constant) + " -ow /dev/stdout | aplay & ";
-  std::cout << open_jtalk << "\n";
   if (system(open_jtalk.c_str()))
     RCLCPP_ERROR(get_logger(), "shell is not available on the system!");
 }
