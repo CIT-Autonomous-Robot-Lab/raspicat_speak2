@@ -8,7 +8,6 @@
 
 #include "rclcpp/rclcpp.hpp"
 
-#include "raspicat_speak2/speak_info.hpp"
 #include "raspicat_speak2/voice_config.hpp"
 
 namespace raspicat_speak2 {
@@ -16,14 +15,15 @@ namespace raspicat_speak2 {
 class RaspicatSpeak2 : public rclcpp::Node {
 public:
   explicit RaspicatSpeak2(const std::string &node_name,
-                          const rclcpp::NodeOptions &options);
+                          const std::string &yaml_path);
 
 protected:
-  void initSubscliber();
   void initTimer();
   void on_timer();
   void setParam();
   void getParam();
+  std::unordered_map<std::string, std::string>
+  parseYaml(const std::string &yaml_path);
 
   void speak(const std::string speak_str);
 
@@ -42,7 +42,6 @@ protected:
                  const std::vector<std::string> topic_list);
 
 private:
-  size_t count_;
   rclcpp::TimerBase::SharedPtr timer_;
 
   std::vector<std::string> subscribed_topics_;
@@ -50,9 +49,9 @@ private:
       subscriptions_;
 
   VoiceConfig voc_;
-  std::map<std::string, SpeakInfo> speak_info_;
 
   std::vector<std::string> topic_list_;
+  std::unordered_map<std::string, std::string> speak_list_;
 };
 
 } // namespace raspicat_speak2
