@@ -21,6 +21,11 @@
 | `speech_speed_rate`         | `double` | 喋る速さ         | 
 | `voice_model`       | `std::string`         | 声のモデル   |
 
+# Install（open-jtalk）
+```
+./scritps/install.sh
+```
+
 # How to use
 
 ## 任意の文章を喋らせる
