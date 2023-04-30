@@ -1,4 +1,4 @@
-# raspicat_speak2
+# raspicat_speak2 [![build-test](https://github.com/CIT-Autonomous-Robot-Lab/raspicat_speak2/actions/workflows/build-test.yaml/badge.svg)](https://github.com/CIT-Autonomous-Robot-Lab/raspicat_speak2/actions/workflows/build-test.yaml)
 
 ## Overview
 [raspicat_speak](https://github.com/CIT-Autonomous-Robot-Lab/raspicat_speak)のROS 2実装です。
