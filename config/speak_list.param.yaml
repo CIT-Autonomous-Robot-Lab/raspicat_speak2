@@ -1,0 +1,17 @@
+/**:
+  ros__parameters:
+    topics:
+      - topic: "/hoge1"
+        sentence: "ナビゲーションが立ち上がりました　にあん"
+      - topic: "/hoge2"
+        sentence: "ナビゲーションをスタートします　にあん"
+      - topic: "/hoge3"
+        sentence: "ウェイポイントを通過しました　にあん"
+      - topic: "/hoge4"
+        sentence: "自己位置推定が不確かです　にあん"
+      - topic: "/hoge5"
+        sentence: "ゴールしました　ナビゲーションを終了します　にあん"
+      - topic: "/hoge6"
+        sentence: "坂道モードに切り替わりました　にあん"
+      - topic: "/hoge7"
+        sentence: "ピコン　ピコン　ロボットが通ります"
